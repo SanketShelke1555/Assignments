@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+    <style>
+        .container {
+            border: 4px solid black;
+            box-shadow: 0px 10px 25px black;
+        }
+
+        .general {
+
+            display: flex;
+            flex-direction: row;
+            margin: 30px;
+            padding: 10px;
+
+        }
+
+        .input {
+            margin-left: 30px;
+        }
+        .submit{
+            margin-left: 130px;
+            margin-bottom: 15px;
+        }
+        .btn{
+            padding: 5px 50px;
+            margin-right: 100px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <div class="container">
+            <div>
+                <h1 style="margin-left: 30px;">Reservation Request</h1>
+            </div>
+
+            <div>
+                <fieldset class="general">
+                    <legend style="color: rgb(38, 38, 242);">Personal Information</legend>
+                    <div>
+                        <label>Arrival Date</label><br><br>
+                        <label>Nights:</label><br><br>
+                        <label>Adults:</label><br><br>
+                        <label>Children:</label><br><br>
+                    </div>
+                    <div class="input">
+                        <input type="date" required><br><br>
+                        <input type="number" name="Nights" min="0" required><br><br>
+                        <input type="number" name="Adults" min="1"><br><br>
+                        <input type="number" name="Children" min="0"><br><br>
+
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset class="general">
+                    <legend style="color: rgb(38, 38, 242);">Preferances</legend>
+                    <div>
+                        <label>Room Type:</label><br><br>
+                        <label>Bed Type:</label><br><br>
+                    </div>
+                    <div class="input">
+                        <input type="radio" name="Room">Standard
+                        <input type="radio" name="Room">Business
+                        <input type="radio" name="Room">Suite <br><br>
+                        <input type="radio" name="Bed">King
+                        <input type="radio" name="Bed">Double-Size <br><br>
+                        <input type="checkbox">Smoking
+                    </div>
+            </div>
+            <div>
+                <fieldset class="general">
+                    <legend style="color: rgb(38, 38, 242);">Contact Information</legend>
+                    <div>
+                        <label>Name:</label><br><br>
+                        <label>Email:</label><br><br>
+                        <label>Address:</label><br><br>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="Name" required><br><br>
+                        <input type="email" name="Email" required><br><br>
+                        <input type="text" name="Address" required><br><br>
+                    </div>
+                </fieldset> 
+                <div class="submit">
+                <button class="btn" >Submit Reservation</button>  
+                <input type="reset" value="Clear" class="btn">
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</body>
+
+</html>
