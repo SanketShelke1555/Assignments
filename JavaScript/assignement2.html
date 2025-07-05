@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators</title>
+</head>
+
+<body>
+
+    <script>
+        // Arithmetic Operator
+
+        a = 10;
+        b = 20;
+
+        c = (a++) + (b++) + (++a) + (++b) + (--a) + (--b);
+
+        document.writeln(c);
+
+        // Even-Odd
+
+        // num=parseInt(prompt("Enter Number:"));
+        if (num % 2 == 0) {
+            document.writeln("Even No.");
+        }
+        else {
+            document.writeln("Odd No.");
+        }
+
+        //  && and ||
+        a = parseInt(prompt("Enter a"));
+        b = parseInt(prompt("Enter b"));
+        c = parseInt(prompt("Enter c"));
+
+        if (a == b && a === c) {
+            document.writeln("a,b,c are equal")
+        }
+        else if (a <= b && a <= c) {
+
+            document.writeln("c is greater than b,a")
+        }
+        else if (b <= a && b <= c) {
+
+            document.writeln("c is greater than a,b")
+        }
+        else {
+
+            document.writeln("a is greater than b,c")
+        }
+    </script>
+
+</body>
+
+</html>
