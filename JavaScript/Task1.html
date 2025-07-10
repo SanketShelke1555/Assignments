@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+
+<body>
+    <script>
+
+        a = parseInt(prompt("Enter Your Subject 1 Marks out of 100"));
+        b = parseInt(prompt("Enter Your Subject 2 Marks out of 100"));
+        c = parseInt(prompt("Enter Your Subject 3 Marks out of 100"));
+        d = parseInt(prompt("Enter Your Subject 4 Marks out of 100"));
+        e = parseInt(prompt("Enter Your Subject 5 Marks out of 100"));
+
+
+        total = a + b + c + d + e;
+        document.writeln("Total/500 = " + total + "<br>");
+
+        percentage = ((total / 500) * 100);
+        document.writeln(" Percentage =" + percentage + "<br>");
+
+        if (percentage >= 70) {
+            document.writeln("Distinction");
+        }
+
+        else if (percentage >= 60) {
+            document.writeln("First Class");
+        }
+
+        else if (percentage >= 45) {
+            document.writeln("Second Class");
+        }
+
+        else if (percentage >= 35) {
+            document.writeln("Pass");
+        }
+
+        else {
+            document.writeln("Fail")
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
