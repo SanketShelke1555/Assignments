@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // function fact(num) {
+        //     if (num == 1) {
+        //         return 1;
+        //     }
+        //     else {
+        //         return num * fact(num - 1);
+        //     }
+
+        // }
+
+        // a = fact(10);
+        // document.writeln(a);
+
+
+
+
+        // function add(num) {
+        //     if (num == 0) {
+        //         return 0;
+        //     }
+
+        //     else {
+        //         return num + add(num - 1);
+        //     }
+        // }
+
+        // a = add(10);
+        // document.writeln(a);
+
+        let num = parseInt(prompt("Enter Number"));
+        let isPrime = true;
+
+        if (num <= 1) {
+            isPrime = false;
+        }
+        else {
+            for (i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        if (isPrime) {
+            document.writeln(num + "is a prime number");
+        }
+        else {
+            document.writeln(num + "is not a prime number");
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
