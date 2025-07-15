@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Windows Events</title>
 </head>
 <body>
+
+    <button onclick="w1()">Windows Open </button> <br><br>
+    <button onclick="w2()"> Close Windows</button> <br><br>
+
+    <script>
+        
+        function w1(){
+            a = window.open();
+        }
+
+        function w2(){
+            a.close();
+        }
+        
+    </script>
     
 </body>
 </html>
