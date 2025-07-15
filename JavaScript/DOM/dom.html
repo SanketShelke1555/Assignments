@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .c1{
+           background-color: aqua;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1 class="head1 ">Good Morning Students</h1><br>
+
+    <button onclick="f1()">Click to Change</button>
+
+    <script>
+        function f1() {
+            a = document.getElementsByClassName("head1");
+            a[0].innerText = "Good Night Students";
+
+            console.log(a);
+
+            a[0].classList.add("c1");
+    
+        }
+    </script>
+</body>
+
+</html>
