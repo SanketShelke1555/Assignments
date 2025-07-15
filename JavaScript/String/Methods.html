@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methods</title>
 </head>
+
 <body>
-    
+
+    <script>
+
+        // Replace()
+        n = new String("HI My name is Sanket");
+
+        document.writeln(n);
+
+        document.writeln("<br>");
+
+        document.writeln("OutPut" + "&nbsp" + n.replace('Sanket', 'Chaitanya'));
+
+        document.writeln("<br>");
+
+        document.writeln(typeof (n));
+
+        document.writeln("<br>");
+
+        document.writeln(n.length);
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+        // UpperCase
+
+        m = new String("convert me in upper-case")
+
+        document.writeln(m);
+
+        document.writeln("<br>");
+
+        document.writeln("OutPut" + "&nbsp" + m.toUpperCase());
+
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+        //LowerCase
+
+        o = new String("CONVERT ME INTO LOWER-CASE");
+
+        document.writeln(o);
+
+        document.writeln("<br>");
+
+        document.writeln("OutPut" + "&nbsp" + o.toLowerCase());
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+        //trim
+
+        p = new String("  Remove space  ")
+
+        document.writeln(p);
+
+        document.writeln("<br>");
+
+        document.writeln("Length of p " + p.length);
+
+        document.writeln("<br>");
+
+        q = p.trim();
+        document.writeln(q.length);
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+        // trimStart
+
+        r = new String("  Remove space  ")
+
+        document.writeln(r);
+
+        document.writeln("<br>");
+
+        document.writeln("Length of r " + r.length);
+
+        document.writeln("<br>");
+
+        s = r.trimStart();
+        document.writeln(s.length);
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+
+        // trimEnd
+
+        t = new String("  Remove space  ")
+
+        document.writeln(t);
+
+        document.writeln("<br>");
+
+        document.writeln("Length of t " + t.length);
+
+        document.writeln("<br>");
+
+        u = t.trimEnd();
+        document.writeln(u.length);
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+
+        // charAt
+
+        v = new String("Hello My Name is Sanket");
+
+        document.writeln(v);
+
+        document.writeln("<br>");
+
+        w = v.charAt(7);
+
+        document.writeln(w);
+
+        document.writeln("<br>");
+        document.writeln("<br>");
+
+
+
+        // split
+
+        x = new String("Sanket Atul Shelke")
+
+        document.writeln(x);
+
+        document.writeln("<br>");
+
+        y = x.split("");  
+        
+        // single space- ',' in between all characters 
+        // double space ',' in between one whole word
+
+        document.writeln(y);
+
+    </script>
+
 </body>
+
 </html>
