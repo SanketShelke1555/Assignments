@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+
+    <script>
+
+        // arr = [1, 2, 3, 4,];
+        // document.writeln(arr + "<br>");
+        // document.writeln(arr.length);
+
+        // // Matrix
+        // arr = [[1,2,3],[4,5,6],[7,8,9]];
+
+        // for(i=0;i<arr.length;i++){
+        //     for(j=0;j<3;j++){
+        //         document.writeln(arr[i][j] + "&nbsp");
+        //     }
+        //     document.writeln("<br>");
+        // }
+        // document.writeln("<br><br>")
+
+
+        // // 2 dimentional Array
+        //  arr = [[1,2,3],[4,5,6],[7,8,9]];
+
+        // for(i=0;i<arr.length;i++){
+        //     for(j=0;j<3;j++){
+        //         document.writeln(arr[i][j] + "<br>");
+        //     }
+        //     document.writeln("<br>");
+        // }
+
+
+
+        n = parseInt(prompt("Enter values for row"));
+        m = parseInt(prompt("Enter values for coloum"));
+
+
+        arr = new Array(n);
+        for (i = 0; i < n; i++) {
+            arr[i] = new Array(m)
+        }
+
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < m; j++) {
+                arr[i][j] = parseInt(prompt("Enter Value of" + (i + 1) + (j + 1) + "Array"));
+            }
+        }
+
+
+        document.writeln("Values are <br>")
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < m; j++) {
+                document.writeln(arr[i][j]);
+            }
+            document.writeln("<br>")
+        }
+        document.writeln(arr.length);
+
+    </script>
+ 
+</body>
+
+</html>

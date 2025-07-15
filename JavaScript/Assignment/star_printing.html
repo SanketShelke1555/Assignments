@@ -10,32 +10,25 @@
 <body>
 
     <script>
-
-        // for (i = 0; i <= 1; i++) {
-        //     for (j = 0; j < 1; j++) {
-        //         document.writeln("* &nbsp *");
-        //     }
-        //     document.writeln("<br>")
-        // }
-
-
-
-
-        num = parseInt(prompt("Enter how many line star you want"));
-        for (i = 0; i <= num; i++) {
-            for (j = 0; j < num; j++) {
-                document.writeln("&nbsp *");
+        Square
+        for (i = 0; i <= 1; i++) {
+            for (j = 0; j < 1; j++) {
+                document.writeln("* &nbsp *");
             }
-            document.writeln("<br>");
+            document.writeln("<br>")
         }
 
 
 
+        Triangle
+        num = parseInt(prompt("Enter how many line star you want"));
+        for (i = 0; i <= num; i++) {
+            for (j = 0; j < i; j++) {
+                document.writeln(" * &nbsp");
+            }
+            document.writeln("<br>");
 
-
-
-
-
+        }
 
     </script>
 

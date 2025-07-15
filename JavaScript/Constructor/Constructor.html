@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+
+<body>
+
+    <script>
+        class A {
+            name;
+            age;
+
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            disp() {
+                document.writeln(this.name + "&nbsp" + this.age);
+            }
+
+        }
+        name = prompt("Enter Name");
+        age = prompt("Enter Age");
+        a = new A(name, age);
+        a.disp();
+
+    </script>
+
+</body>
+
+</html>

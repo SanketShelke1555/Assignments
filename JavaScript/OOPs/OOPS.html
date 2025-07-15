@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPs</title>
+</head>
+
+<body>
+
+    <script>
+
+        class A {
+            disp() {
+                document.writeln("I am disp of A");
+            }
+
+            m1() {
+                document.writeln("I am m1 of A");
+            }
+        }
+
+        class B extends A {
+            disp() {
+                document.writeln("I am disp of B");
+            }
+
+            m2() {
+                document.writeln("I am m2 of B");
+            }
+        }
+
+        class C extends B {
+            disp() {
+                document.writeln("I am disp of C");
+            }
+
+            m3() {
+                document.writeln("I am m3 of C");
+            }
+        }
+
+        P = new C();
+
+        P.disp();
+        document.writeln("<br>")
+        P.m3();
+        document.writeln("<br>")
+        P.m2();
+        document.writeln("<br>")
+        P.m1();
+        document.writeln("<br>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
