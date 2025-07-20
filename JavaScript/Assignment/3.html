@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            background-image: linear-gradient(180.7deg, rgba(11, 47, 159, 1) -28.8%, rgba(199, 255, 216, 1) 95.4%);
+            height: 700px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .content {
+
+            height: 400px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        label {
+            width: 450px;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .inp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .btn2 {
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+
+        .calculate {
+            display: flex;
+            justify-content: center;
+            /* center both items */
+            align-items: center;
+            gap: 40px;
+            /* space between button and input */
+            background-color: aquamarine;
+            height: 100px;
+        }
+
+
+        .final {
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>Employee Salary Calculator</h1>
+        </div>
+
+        <div class="content">
+            <div class="form-row">
+                <label>Enter employee Id:</label>
+                <input type="number" placeholder="Id" id="empid">
+            </div>
+            <div class="form-row">
+                <label>Enter employee Name:</label>
+                <input type="text" placeholder="Name" id="empname">
+            </div>
+            <div class="form-row">
+                <label>Enter employee Monthly Salary:</label>
+                <input type="number" placeholder="Salary" id="empsly">
+            </div>
+            <div class="form-row">
+                <label>Enter employee PF:</label>
+                <input type="number" placeholder="PF" id="emppf">
+            </div>
+            <div class="form-row">
+                <label>Enter employee HRA:</label>
+                <input type="number" placeholder="HRA" id="emphra">
+            </div>
+            <div class="form-row">
+                <label>Enter employee TA:</label>
+                <input type="number" placeholder="TA" id="empta">
+            </div>
+            <div class="form-row">
+                <label>Enter Present Days:</label>
+                <input type="number" placeholder="PD" id="emppd">
+            </div>
+            <div class="form-row">
+                <label>Enter Working Days:</label>
+                <input type="number" placeholder="Working Days" id="empwd">
+            </div>
+
+        </div> <br>
+
+        <div class="calculate">
+
+            <button class="btn" onclick="f1()">Calculate Salary</button>
+            <input type="text" placeholder="Final Salary" class="btn2" id="finalresult">
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+
+
+        function f1() {
+            a = document.getElementById("empid").value;
+            g = document.getElementById("empname").value;
+            b = parseFloat(document.getElementById("empsly").value);
+            c = parseFloat(document.getElementById("emppf").value);
+            d = parseFloat(document.getElementById("emphra").value);
+            e = parseFloat(document.getElementById("empta").value);
+            h = parseFloat(document.getElementById("empwd").value);
+            i = parseFloat(document.getElementById("emppd").value);
+
+            total = (((b / h) * i) + d + e - c);
+
+            document.getElementById("finalresult").value =
+                g + " with id " + a + " Month Salary is " + total;
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
