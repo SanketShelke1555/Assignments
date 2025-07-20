@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" placeholder="Enter Login Name" id="i1"><br><br>
+        <input type="password" placeholder="Enter Password" id="i2"><br><br>
+
+        <button type="submit" onclick="f1()">Submit</button>
+
+    </form>
+
+
+    <script>
+        function f1() {
+            a = document.getElementById("i1").value;
+            b = document.getElementById("i2").value;
+
+            a = a.trim();
+            b = b.trim();
+            
+             if ( a== 'Sanket' && b == '1234'){
+                alert("Login Sucessful")
+
+             }
+             else{
+                alert("Login Failed")
+             }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

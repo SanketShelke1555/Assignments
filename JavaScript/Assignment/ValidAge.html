@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Valid Age</title>
+    <style>
+        .div1 {
+            background-image: radial-gradient(circle farthest-corner at 6.3% 21.8%, rgba(236, 6, 117, 1) 0%, rgba(13, 32, 67, 1) 90%);
+            width: 500px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .div2 {
+            display: flex;
+            justify-content: space-evenly
+        }
+
+        .Age {
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+
+        input {
+            padding: 8px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="h1">
+            <h1>Check Your Age</h1>
+        </div>
+        <br><br><br>
+        <div class="div2">
+
+            <div class="Age">
+                <label>Enter Your Age:</label>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Enter Age" id="i1"><br><br>
+            </div>
+
+        </div> <br><br><br><br><br><br>
+
+
+        <div class="btn">
+            <button onclick="f1()" style="padding: 10px;">Check Validity</button>
+        </div>
+
+    </div>
+
+
+    <script>
+        function f1() {
+
+            a = document.getElementById("i1").value;
+
+            if (a <= 100) {
+                alert("Valid Age");
+            }
+            else {
+                alert("Invalid Age")
+            }
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

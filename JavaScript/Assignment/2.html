@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2A</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url(https://m.media-amazon.com/images/I/81mQ3EM3fzL.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .main {
+                width: 600px;
+                height: 500px;
+                background-image: radial-gradient(circle farthest-corner at -6.3% 49.8%, rgba(238, 17, 17, 1) 0.1%, rgba(238, 17, 17, 1) 8.5%, rgba(31, 11, 214, 1) 100.2%);
+                
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .d1 {
+                display: flex;
+                justify-content: center;
+                color: white;
+            }
+
+            .d2 {
+                display: flex;
+                justify-content: space-evenly;
+                font-size: xx-large;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .d3 {
+                display: flex;
+                justify-content: center;
+
+            }
+
+            input {
+                padding: 0px 30px 0px 30px;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            button {
+                padding: 20px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="d1">
+
+            <h1>ADD/SUB/MUL/DIV</h1>
+
+        </div>  <br><br>
+
+        <div class="d2">
+
+            <label>Enter Num1:</label>
+
+            <input type="number" placeholder="Num1" id="i1">
+
+        </div>   <br><br><br>
+
+        <div class="d2">
+
+            <label>Enter Num2:</label>
+
+            <input type="number" placeholder="Num2" id="i2">
+
+        </div>    <br><br><br>
+
+        <div class="d3">
+
+            <input type="text" placeholder="Result" style="padding: 10px;" id="result">
+            
+        </div><br><br><br><br>
+
+        <div class="btn">
+
+            <button onclick="add()">Addition</button>
+
+            <button onclick="sub()">Substraction</button>
+
+            <button onclick="mul()">Multiplication</button>
+
+            <button onclick="div()">Division</button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function add() {
+
+            a = document.getElementById("i1").value;
+
+            b = document.getElementById("i2").value;
+
+            c = document.getElementById("result");
+
+            sum = parseFloat(a) + parseFloat(b);
+
+            c.value = sum;
+            
+        }
+
+        function sub() {
+
+            a = document.getElementById("i1").value;
+
+            b = document.getElementById("i2").value;
+
+            c = parseFloat(a) - parseFloat(b);
+
+            document.getElementById("result").value = c;
+            
+        }
+
+        function mul() {
+
+            a = document.getElementById("i1").value;
+
+            b = document.getElementById("i2").value;
+
+            c = parseFloat(a) * parseFloat(b);
+
+            document.getElementById("result").value = c;
+
+        }
+
+        function div() {
+
+            a = document.getElementById("i1").value;
+
+            b = document.getElementById("i2").value;
+
+            c = parseFloat(a) / parseFloat(b);
+
+            document.getElementById("result").value = c;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
