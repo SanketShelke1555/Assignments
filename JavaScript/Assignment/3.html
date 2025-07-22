@@ -74,26 +74,20 @@
             width: 300px;
             height: 40px;
             font-size: 16px;
-            padding: 5px 10px;
+            padding: 20px 50px;
+
         }
 
         .calculate {
             display: flex;
             justify-content: center;
-            /* center both items */
             align-items: center;
-            gap: 40px;
-            /* space between button and input */
-            background-color: aquamarine;
+            gap: 120px;
             height: 100px;
         }
 
 
-        .final {
-            display: flex;
-            justify-content: center;
-
-        }
+        
     </style>
 </head>
 
@@ -142,7 +136,7 @@
         <div class="calculate">
 
             <button class="btn" onclick="f1()">Calculate Salary</button>
-            <input type="text" placeholder="Final Salary" class="btn2" id="finalresult">
+             <textarea id="finalresult" class="btn2" readonly></textarea>
 
         </div>
 
@@ -166,7 +160,7 @@
             total = (((b / h) * i) + d + e - c);
 
             document.getElementById("finalresult").value =
-                g + " with id " + a + " Month Salary is " + total;
+                g + " with id " + a +  " Month Salary is " + total;
         }
 
 
